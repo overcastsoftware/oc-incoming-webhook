@@ -1,7 +1,7 @@
-from django.conf.urls import patterns, url, include
+from django.conf.urls import url, include
 
 from .views import WebHookView
 
-urlpatterns = patterns('',
+urlpatterns = [
     url(r'^$', WebHookView.as_view()),
-)
+]
